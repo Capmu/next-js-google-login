@@ -6,7 +6,7 @@
   justify-content: center; /* Vertically center */
   min-height: 100vh;
   background-color: #fafafa; /* Off-white */
-  font-family: 'Arial', sans-serif; /* Example font */
+  font-family: "Arial", sans-serif; /* Example font */
 }
 
 .container {
@@ -61,10 +61,45 @@
    depending on the @react-oauth/google version. */
 .googleButton span {
   /* Example: Add some margin to the icon */
-  margin-right: 8px;  /* Adjust as needed */
+  margin-right: 8px; /* Adjust as needed */
 }
 
 /* If you want to style the "Sign in with Google" text specifically */
-.googleButton span:last-child { /* Selects the last span (the text) */
-    /* Add text styling here if needed */
+.googleButton span:last-child {
+  /* Selects the last span (the text) */
+  /* Add text styling here if needed */
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.userImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userName {
+  color: #5334ab;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.userEmail {
+  font-size: 1em;
+  color: #555;
 }
